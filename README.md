@@ -1,1 +1,1 @@
-# BETA-Eserciziario-fisica-moderna
+# Eserciziario-fisica-moderna
