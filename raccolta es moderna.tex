@@ -1,15 +1,14 @@
 \documentclass[12pt,twoside,a4]{article}
 \usepackage{subfiles}
-\include{Headerfismat}
-\include{/Users/pietroscapolo/Library/CloudStorage/OneDrive-UniversitàdegliStudidiPadova/LaTeX/Headers}
+\include{Headeresmoderna.tex}
+
 \DeclareMathOperator{\arcsinh}{arcsinh}
 \DeclareMathOperator{\arctg}{arctg}
 \DeclareMathOperator{\tg}{tg}
-\usepackage{amsmath}
-\usepackage[fleqn]{nccmath}
 
 
 \begin{document}
+\setlength{\headheight}{15.2pt}
 
 \title{Raccolta di esercizi di \\Fisica Moderna}
 \author{Diletta Viola \\ \small{\href{mailto:\\ diletta.viola@studenti.unipd.it}{diletta.viola@studenti.unipd.it}}\\ \Large Pietro Scapolo \\ \small{\href{mailto:\\ pietro.scapolo@studenti.unipd.it}{pietro.scapolo@studenti.unipd.it}}}
@@ -28,12 +27,9 @@
     \end{adjustwidth}
 
 
-
+\setcounter{tocdepth}{2}
 
 \vspace*{\fill} 
-\newpage
-\pagestyle{empty}
-\newpage
 \pagestyle{empty}
 \pagenumbering{none}
 \vspace*{\fill}
@@ -41,8 +37,6 @@
 \vspace*{\fill}
 
 
-
-\newpage
 \pagestyle{thesis}
 \pagenumbering{arabic}\markboth{RELATIVITÀ}{1 Cinematica relativistica}
 \section{Relatività }
@@ -293,20 +287,20 @@ e la reazione (2) avviene in un piano perpendicolare a $\vec B$ ed in condizioni
 \end{enumerate}
 \end{esercizio}
 
-\newpage
 \begin{esercizio}
-	-In un sistema inerziale $S$ protoni di massa $m_p = 1\frac{GeV}{c^2}$ sono prodotti in quiete nell' origine di un sistema di coordinate cartesiane in una regione odve, per $y < y_0$, è presente un campo elettromagnetico uniforme e costante con
-	\begin{equation*}
-		\vec E =(0,E,0) \ \ \vec B = (0,0,B) \ \ E=B=10^7 \frac{V}{m}
-	\end{equation*}
+	-In un sistema inerziale $S$ protoni di massa $m_p = 1\frac{GeV}{c^2}$ sono prodotti in quiete nell'origine di un sistema di coordinate cartesiane in una regione dove, per $y < y_0$, è presente un campo elettromagnetico uniforme e costante con
+	
+	\begin{equation} 
+		\vec E =(0,E,0) \qquad \vec B = (0,0,B) \qquad E=B=10^7 \frac{V}{m}
+	\end{equation}
 Parallelamente al piano xz, alla coordinata $y_0$, vi è una targhetta assimilabile ad un piano infinito di Deuterio $\mathrm{^2H}$
 \begin{enumerate}[label=(\textit{\roman*})]
 	\item Si determini l'estremo superiore dei valori di $y_0$ per cui possa avvenire l'urto tra i protoni ed i nuclei della targhetta;
 	\item Nelle condizioni del punto 1) si calcoli il quadrimomento dei protoni in $S$ all'istante dell'urto;
 	\item Assumendo $m_D=2m_P$, $m_N-m_P=2 \frac{MeV}{c^2}$ si dica giustificandolo se nelle condizioni del punto 1) può avvenire la reazione:
-	\begin{equation*}
+	\begin{equation}
 	p + D \rightarrow p +p +n	
-	\end{equation*}
+	\end{equation}
 \end{enumerate}
 \end{esercizio}
 
@@ -359,11 +353,13 @@ Nel caso in cui $\nu^-$ emerga con un angolo di $\frac{\pi}{2}$ rispetto alla di
 	\begin{equation*}
 		K \rightarrow \pi^- + \pi^+
 	\end{equation*}
-In condizioni di angolo minimo $\left(\theta_\mathrm{m} = \frac{\pi}{2} \right)$  tra di loro entra tra le espansioni di un magnete (con campo magnetico $\vec{B} = 200 \cdot 10^6 \frac{\mathrm{V}}{\mathrm{m}} \ \hat{z}$ misurato nel proprio sistema di riferimento) lungo la direzione $\hat{y}$. Inoltre, lungo tale direzione il magnete misura $L = 1$ m. Il magnete si muove lungo $\hat{x}$ con una velocità $\vec{\beta}= \frac{3}{5} \hat{x}$. Uscito dal magnete, il fascio decade in volo secondo la relazione: 
+
+In condizioni di angolo minimo $\left(\theta_\mathrm{m} = \frac{\pi}{2} \right)$  tra di loro entra tra le espansioni di un magnete (con campo magnetico $\vec{B} = 200 \cdot 10^6 \frac{\mathrm{V}}{\mathrm{m}} \, \hat{z}$ misurato nel proprio sistema di riferimento) lungo la direzione $\hat{y}$. Inoltre, lungo tale direzione il magnete misura $L = 1$ m. Il magnete si muove lungo $\hat{x}$ con una velocità $\vec{$\beta$} = \frac{3}{5} \hat{x}$. 
+   Uscito dal magnete, il fascio decade in volo secondo la relazione: 
 
 \begin{equation*}
 		\pi^- \rightarrow \mu^- + \nu^-_\mu
-	\end{equation*}
+\end{equation*}
 
 Calcolare:
 \begin{enumerate}[label=(\textit{\roman*})]
@@ -631,8 +627,8 @@ Il $\pi^+$ viene emesso in condizioni di energia massima e successivamente entra
 
 \begin{esercizio}
 	-Un corpo nero sferico, di raggio $R$ e temperatura costante $T$, viene osservato ad una distanza $l = 50 m$. Nel punto di osservazione l'intensità  della
-radiazione proveniente dal corpo  è $I = 0,032 \frac{W}{m^2}$ e la lunghezza d'onda in cui 
-l'emissione è massima è $\lambda_{mac}=150 \mu m$. Si chiede:
+radiazione proveniente dal corpo  è $I = 0.032 \frac{W}{m^2}$ e la lunghezza d'onda in cui 
+l'emissione è massima è $\lambda_{mac}=1.50 \mu m$. Si chiede:
 \begin{enumerate}[label=(\textit{\roman*})]
 	\item la temperatura del copro nero;
 	\item il raggio del corpo nero;
@@ -656,7 +652,7 @@ Si ricorda la costante di Stefan-Boltzmann è $\sigma_{SB}=5,67 \cdot 10^{-8} \f
 \end{esercizio}
 
 \begin{esercizio}[n.4 Prof. Ferruccio]
-	-La luminosità del sole è circa $L = 3.84 \cdot 1026 W$. Trattando il sole come un corpo nero alla temperatura $T_S = 6000 K$, determinarne il raggio $R_S$.
+	-La luminosità del sole è circa $L = 3.84 \cdot 10^{26} W$. Trattando il sole come un corpo nero alla temperatura $T_S = 6000 K$, determinarne il raggio $R_S$.
 \end{esercizio}
 
 \begin{esercizio}[n.5 Prof. Ferruccio]
@@ -913,7 +909,7 @@ Considerando l'equazione di Schrodinger relativa al caso $V_0 \neq 0$:
 \end{esercizio}
 
 \begin{esercizio}[n.27 Prof. Ferruccio]
-	-Determinare la larghezza L di una buca di potenziale infinita in una dimensione, affinchè un elettrone che ne occupi lo stato ad energia minima abbia la stessa energia di un elettrone nello stato fondamentale dell'atomo di litio (Z=3) $Li^{2+}$ doppiamente ionizzato.
+	-Determinare la larghezza L di una buca di potenziale infinita in una dimensione, affinché un elettrone che ne occupi lo stato ad energia minima abbia la stessa energia di un elettrone nello stato fondamentale dell'atomo di litio (Z=3) $Li^{2+}$ doppiamente ionizzato.
 \end{esercizio}
 
 
@@ -966,22 +962,7 @@ Considerando l'equazione di Schrodinger relativa al caso $V_0 \neq 0$:
         t_1 = 0 \\
     \end{cases} 
     \Rightarrow \ x'_1 = \gamma(x_1 - v t_1) = \frac{1}{2} \gamma  \Rightarrow \ t'_1 = \gamma \left(t_1 - \frac{v x_1}{c^2} \right) = -\gamma \ \frac{1}{2} \ \frac{v}{c^2}   \Rightarrow \  y'_1 = 0
-    
 \end{equation*}
-
-\begin{comment}
-\begin{enumerate}[label=(\textit{\roman*})]
-\item $x_1 = 0.5$
-\item $y_1 = 0$
-\item $t_1 = 0$
-\end{enumerate}
-
-\begin{gather*}
-\Rightarrow x'_1 &= \gamma(x_1 - v t_1) = \frac{1}{2} \gamma \
-\Rightarrow t'_1 = \gamma \left(t_1 - \frac{v x_1}{c^2} \right) = -\gamma \frac{1}{2} \frac{v}{c^2} \gamma \
-\Rightarrow y'_1 &= 0
-\end{gather*}
-\end{comment}
 
 \emph{EVENTO 2}: il centro della sbarra ha come coordinate (così come si evince dal testo) pari a: 
 \begin{gather*}
@@ -1042,17 +1023,15 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
 \begin{solution}
 	Dando per scontato di conoscere la velocità, $v$, di S' rispetto ad S le componenti del segnale luminoso nel s.d.R. S sono: 
  \begin{equation*}
- \begin{large}
      \begin{cases} 
-     u_x = \frac{u'_x + v}{1+\frac{v}{c^2} u'_x}\\ \\
+     u_x = \frac{u'_x + v}{1+\frac{v}{c^2} u'_x}\\
      u_x = \frac{u'_y}{\gamma \left(1+\frac{v}{c^2} u'_x \right)}\\ 
      \end{cases}
-       \  \Rightarrow  \  
+       \;  \Rightarrow  \; 
      \begin{cases} 
-     \cos{\theta} = \frac{\cos{\theta'} + v}{1+\frac{v}{c} \cos{\theta}}\\ \\
+     \cos{\theta} = \frac{\cos{\theta'} + v}{1+\frac{v}{c} \cos{\theta}}\\
      \sin{\theta} = \frac{\sin{\theta'}}{\gamma \left(1+\frac{v}{c} \cos{\theta'} \right)}\\ 
      \end{cases} 
-     \end{large}
  \end{equation*}
 \end{solution}
 
@@ -1063,16 +1042,14 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
  \begin{gather}
     x'_1 = \gamma (L - \frac{3}{5} c t) \\
     x'_2 = \gamma (- L - \frac{3}{5} c t) \\
-    \Rightarrow   \Delta s' = x'_2 - x'_1 = 2\gamma L \\ 
-    
+    \Rightarrow   \Delta s' = x'_2 - x'_1 = 2\gamma L \\     
  \end{gather}
  \end{solution}
 
  \begin{solution}
 	 Perché due eventi avvengano allo stesso tempo nel s.d.R. S' bisogna che essi siano collegati da un intervallo di tipo spazio $(\Delta S^2 < 0)$. In questo caso si avvera la condizione, dunque è possibile determinare la velocità $v$ di S' rispetto a S. Applicando le trasformazioni si ottiene: 
  \begin{equation*}
-    t'_1 = \gamma \left(t_1 - \frac{v}{c^2} x_1 \right) = 0  \  t'_2 = \gamma \left(t_2 - \frac{v}{c^2} x_2 \right) = \frac{\gamma}{c} (1-2\beta) 
-    
+    t'_1 = \gamma \left(t_1 - \frac{v}{c^2} x_1 \right) = 0  \  t'_2 = \gamma \left(t_2 - \frac{v}{c^2} x_2 \right) = \frac{\gamma}{c} (1-2\beta)     
  \end{equation*}
  Perché avvengano allo stesso istante $t'_1 = t'_2 = 0$, quindi $\beta = \frac{1}{2}$.
 \end{solution}
@@ -1113,8 +1090,7 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
  Dunque il tempo che impiega il protone per attraversare la galassia nel s.d.R. S, $t_p$, e nel s.d.R. S', $t'_p$, sono rispettivamente:  
  \begin{fleqn}[\parindent]
  \begin{equation*}
-    t'_p = \frac{l_0}{c \ \gamma \sqrt{1-\frac{1}{\gamma^2}}} = 297.48  \ \mathrm{s} = 4.95 \ \mathrm{min}  \ ;  \  t_p = \gamma t_p = 5.247 \cdot 10^{10} \ \mathrm{s} \ ; 
-    
+    t'_p = \frac{l_0}{c \ \gamma \sqrt{1-\frac{1}{\gamma^2}}} = 297.48  \ \mathrm{s} = 4.95 \ \mathrm{min}  \ ;  \  t_p = \gamma t_p = 5.247 \cdot 10^{10} \ \mathrm{s} \ ;    
  \end{equation*}
  \end{fleqn}
 \end{solution}
@@ -1127,23 +1103,23 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
 \end{equation*} 
  
 
+
  \begin{figure}[H]
 	   \centering
-\includegraphics[height=0.25  \linewidth]{Grafici/graf.pdf}
+\includegraphics[height=0.25  \linewidth]{graf.pdf}
 		     
 		        \caption{\centering Grafico con le relative Energie}
         \end{figure}
 \end{solution}
 
+
 \newpage
 \begin{solution}
-	 Il lavoro che serve per accelerare un elettrone è uguale all'energia cinetica $W = T = 10^5 \ \mathrm{eV} = (\gamma -1) \ m_0 c^2$. Dunque $\gamma = \frac{1}{m_0} +1 = 1.19$ \  mentre \ $v = \sqrt{1 - \frac{1}{\gamma^2}} \ c = 0.55 \ c \simeq 1.64 \cdot 10^8 m/s$. \\
+	 Il lavoro che serve per accelerare un elettrone è uguale all'energia cinetica $W = T = 10^5 \ \mathrm{eV} = (\gamma -1) \ m_0 c^2$. Dunque $\gamma = \frac{1}{m_0} +1 = 1.19$ \  mentre \ $v = \sqrt{1 - \frac{1}{\gamma^2}} \ c = 0.55 \ c \simeq 1.64 \cdot 10^8 m/s$. 
  
- \smallskip
  \begin{enumerate}[label=(\textit{\roman*})]
- \item $\Delta t = \frac{l_0}{v} = 6.08 \cdot 10^{-8}$ \\
+ \item $\Delta t = \frac{l_0}{v} = 6.08 \cdot 10^{-8}$ 
  
- \smallskip
  \item $\Delta t' = \gamma \Delta t = 8.13 \cdot 10^{-8}$ ... quindi da qui si può trovare la distanza...
  \end{enumerate}
 \end{solution}
@@ -1187,13 +1163,10 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
 	 \item $
      v_e =\frac{99}{100} \ c  \  \gamma = \frac{1}{\sqrt{1 - \left(\frac{99}{100}\right)^2}} = 7.1  \  \Rightarrow  \  T = (\gamma -1) \ m_e c^2 = 3.1 \cdot 10^6 \mathrm{eV}$
   
-  \smallskip
- Quindi $V = 3.1 \cdot 10^6 \mathrm{V}$. \\
+ Quindi $V = 3.1 \cdot 10^6 \mathrm{V}$.
  
- \smallskip
 \item $v_p =\frac{99}{100} \ c  \  \gamma = \frac{1}{\sqrt{1 - \left(\frac{99}{100}\right)^2}} = 7.1  \  \Rightarrow  \  T = (\gamma -1) \ m_p c^2 = 5.7 \cdot 10^9 \mathrm{eV} $
 
-\smallskip 
 Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
  \end{enumerate}
 
@@ -1219,12 +1192,12 @@ Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
  	\end{gather*}
      Dove  $E^\ast_\mu = \frac{m^2_\pi + m^2_\mu}{2 m_\pi} $. Dunque si ottiene che:
 	
-	\begin{equation**}
+	\begin{equation*}
 	    \begin{cases}
 	    \not\exists \theta^\nu_\mathrm{MAX} \\
 	    \theta^\mu_\mathrm{MAX} = \arcsin{\frac{p^\ast_\mu}{\gamma_\pi \beta_\pi m_\mu}} = 0.086 \ \mathrm{rad}
 	    \end{cases}
-	\end{equation**}
+	\end{equation*}
 	 
 	\item Se $E_\mu = \gamma (E^\ast_\mu + \beta_\pi \overline{p}_\mu \cos{\theta^\ast})$ si ottengono $E^\mu_\mathrm{MAX} = \gamma (E^\ast_\mu + \beta_\pi \overline{p}_\mu) = 495 \ \mathrm{MeV}$ e $E^\mu_\mathrm{MIN} = \gamma (E^\ast_\mu - \beta_\pi \overline{p}_\mu) = 290 \ \mathrm{MeV}$ . 
  
@@ -1245,13 +1218,11 @@ Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
 \vspace{-1cm}
 	\begin{enumerate}[label=(\textit{\roman*})]
 		\item Considerando la soluzione della legge dei decadimenti in cui $N(t)$ è uguale al numero di particelle che ancora non sono decadute, si ottiene una relazione in cui il tempo è in funzione della velocità:
-			\begin{gather*}
+		\begin{align*}
 	    N(t) &= N_0 \ e^{-\frac{t}{\tau}} = N_0 \ e^{-\frac{t}{\gamma \tau_0}} \\
-	    \Rightarrow  \  t &= -\ln{\left( \frac{9}{10}\right)} \gamma \tau_0 
-	    \text{con}    t = \frac{l}{\beta c} \\
-	    \Rightarrow  \  \frac{l}{\beta c } &= \ln{\frac{10}{9}} \frac{1}{\sqrt{1-\beta^2}} \tau_0
-	\end{gather*}
-	 
+	    \Rightarrow  \  t &= -\ln{\left( \frac{9}{10}\right)} \gamma \tau_0 \qquad \text{con} \; t = \frac{l}{\beta c} \\
+	    \Rightarrow  \  \frac{l}{\beta c } &= \ln{\frac{10}{9}} \frac{1}{\sqrt{1-\beta^2}} \tau_0 
+	   	\end{align*}
 	 quindi $\beta^2 = 0.993$ e di conseguenza $\gamma = 12.2$. \\
   N.B. nella legge dei decadimenti quando viene riportato $\tau_0$ esso è misurato nel s.d.R. delle particelle, che quindi deve essere moltiplicato per il fattore $\gamma$ per spostarsi nel s.d.R. del laboratorio.
 	
@@ -1259,12 +1230,11 @@ Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
 	
 	\item La condizione per cui si ha un angolo $\theta > \frac{\pi}{2}$ si ottiene nel caso in cui $\beta_{CM} < \beta^\ast_\alpha$. Infatti basta riprendere il concetto secondo cui l'ellisse è il luogo dei punti su cui varia il modulo di $\overline{p}_\alpha$ e l'angolo di diffusione, e ricordarsi il caso in cui l'origine (0;0) è un punto interno all'ellisse. Si calcolano dunque $\beta_{CM} = \beta_\pi$ e $\beta^\ast_\alpha = \beta^\ast_\mu$:
 	
-	\begin{gather*}
+	\begin{align*}
 	    \beta_\pi &= \frac{\overline{p}_\pi}{E_\pi} = \frac{\sqrt{E^2_\pi - m^2_\pi}}{E_\pi} = 0.997 \\
 	    \beta^\ast_\mu &= \frac{\overline{p^\ast}_\mu}{E^\ast_\mu} = 0.27 \\
 	    \text{considerando che}  \  E^\ast_\mu &= \frac{m^2_\pi + m^2_\mu}{2 m_\pi} = 110 \ \mathrm{MeV}
-	\end{gather*}
-	
+	\end{align*}	
 	In conclusione avendo $\beta_\pi > \beta^\ast_\mu$ non si ha la condizione per cui l'angolo di diffusione $\theta > \frac{\pi}{2}$.
 \end{enumerate}
 
@@ -1277,19 +1247,23 @@ Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
 \vspace{-1cm}
 \item L'energia minima che deve avere il fotone, $\gamma$, per dare luogo alla reazione non è altro che l'energia di soglia. Si ha quindi la condizione per cui $p^\ast_p = 0 , \ p^\ast_n = 0 , \ p^\ast_\pi = 0$, ovvero la condizione per cui le particelle prodotte dal decadimento sono in quiete rispetto al centro di massa.
 Sfruttando l'invariante di Mandelstam, $W^2$, in cui il primo membro fa riferimento al s.d.R. del lab e il secondo al s.d.R. del centro di massa, si ottiene:
-\begin{gather*}
+\begin{align*}
 (p_\gamma + p_T)^2 &= (p^\ast_p + 2 \ p^\ast_n + p^\ast_\pi)^2 \\ \Rightarrow [(p_\gamma + p_T)^0]^2 - (\overline{p}\gamma + \overline{p}T)^2  &= [(p^\ast_p + 2 \ p^\ast_n + p^\ast\pi)^0]^2 - (\overline{p^\ast}p + 2 \ \overline{p^\ast}n + \overline{p^\ast}\pi)^2
-\end{gather*}
+\end{align*}
 
-\begin{gather*}
+\begin{align*}
 (E\gamma + m_T)^2 - \overline{p}^2\gamma &= (m_p + 2 \ m_n + m_\pi)^2 \\
 \Rightarrow E^S_\gamma &= \frac{(m_p + 2 \ m_n + m_\pi)^2 - m^2_T}{2 \ m_T} = 152.4 \ \mathrm{MeV}
-\end{gather*}
+\end{align*}
 dove $p_\gamma = (E_\gamma, \overline{p_\gamma},0,0) = (E_\gamma, E_\gamma, 0, 0)$, 
 
-$p_T = (E_T, 0, 0, 0) = (m_T, 0 , 0 , 0)$, $p^\ast_p = (m_p, 0, 0, 0)$, 
+$p_T = (E_T, 0, 0, 0) = (m_T, 0 , 0 , 0)$
 
-$p^\ast_n = (m_n, 0, 0, 0)$, e $p^\ast_\pi = (m_\pi, 0, 0, 0)$. \\
+$p^\ast_p = (m_p, 0, 0, 0)$
+
+$p^\ast_n = (m_n, 0, 0, 0)$
+
+$p^\ast_\pi = (m_\pi, 0, 0, 0)$.
 
 
 N.B. $m_p = 938.3 \ \frac{\mathrm{MeV}}{c^2}$ e $m_n = 939.6 \ \frac{\mathrm{MeV}}{c^2}$
@@ -1359,7 +1333,9 @@ f = \frac{\Delta E}{E_e} = \frac{2 \ p^\ast}{E_\nu \ m_e} = \frac{2 \ m_e E_\nu}
  
  In conclusione $E_\pi = m_\pi \ \gamma_\pi = m_\pi \frac{1}{\sqrt{1-\beta^2_\pi}} = 182.2 \ \mathrm{MeV}$
  
- \item L'angolo minimo tra i due $\gamma$ prodotti nella reazione (3) è uguale a $\theta = 2 \ \arctg{\left( \frac{\beta^\ast_{\gamma}}{\gamma_{\pi_{(2)}} \beta_{\pi_{(2)}}} \right)}$ . 
+ \item L'angolo minimo tra i due $\gamma$ prodotti nella reazione (3) è uguale a 
+ 
+ $\theta = 2 \ \arctg{\left( \frac{\beta^\ast_{\gamma}}{\gamma_{\pi_{(2)}} \beta_{\pi_{(2)}}} \right)}$ . 
  
  \smallskip
  Dato che la reazione (2) avviene in soglia si ha la condizione per cui i prodotti sono in quiete rispetto al centro di massa e dunque hanno la stessa velocità di quest'ultimo nel s.d.R. del laboratorio.
@@ -1398,7 +1374,6 @@ f = \frac{\Delta E}{E_e} = \frac{2 \ p^\ast}{E_\nu \ m_e} = \frac{2 \ m_e E_\nu}
   \item Sapendo che i due pioni hanno energia diversa i loro angoli non possono essere uguali, quindi si passa a calcolare la variazione di energia per trovare il valore del $\cos{\theta^\ast}$: 
  \begin{equation*}
      E^S_\pi = \gamma_f \  (E^\ast_\pi - \beta_f \ p^\ast_\pi)  \  [\text{minima}]    
- 
  \end{equation*}
  \begin{equation*}
       9 \ E^S_\pi = \gamma_f \ (E^\ast_\pi + \beta_f \ p^\ast_\pi)  \  [\text{massima}] 
@@ -1448,9 +1423,9 @@ Applicando il principio di conservazione dell'energia:
 \mathcal{E}+ + \mathcal{E}- = \mathcal{E}X = M \gamma  \Rightarrow  \  \gamma = \frac{\mathcal{E}+ + \mathcal{E}-}{M} = \frac{\sqrt{m^2 + p^2{e^+}} + \sqrt{m^2 + p^2_{e^-}}}{M} \\ \Rightarrow  \beta^2 = 1 - \frac{M^2}{(\mathcal{E}+ + \mathcal{E}-)^2}
 \end{gather*}
 Dunque:
-\begin{equation**}
+\begin{equation*}
 \tau_0 = \frac{L M (\mathcal{E}+ + \mathcal{E}-)}{(\mathcal{E}+ + \mathcal{E}-) c \sqrt{(\frac{\mathcal{E}+ + \mathcal{E}-}{M})^2 - 1}} = \frac{L}{c \sqrt{(\frac{\mathcal{E}+ + \mathcal{E}-}{M})^2 - 1}}
-\end{equation**}
+\end{equation*}
 \end{enumerate}
 \end{solution}
 
@@ -1468,9 +1443,13 @@ Dunque:
 
 Dato che conosco il valore di $\Delta \mathcal{E}$, trovo la relazione $\Delta y' = \Delta y = \frac{\Delta \mathcal{E}}{eE}$. La traiettoria seguita dalla particella è data da:
 
-\begin{equation*}
-y'(t) = \frac{\gamma}{eE} \left(\sqrt{\mathcal{E}'^2_0 + (ceE't')^2} - \mathcal{E}'_0 \right) = \frac{\Delta \mathcal{E}}{eE}  \Rightarrow  t' = \sqrt{\left(\frac{\Delta \mathcal{E}}{\gamma} \right)^2 - 2 \frac{\Delta \mathcal{E}}{\gamma} \mathcal{E}'_0} \Rightarrow \boxed{ t = \gamma \left(t' - \frac{\beta}{c}x'(t) \right) }
+\begin{equation*} %le quazioni non insieme altrimenti esce fuori dalla pagina
+y'(t) = \frac{\gamma}{eE} \left(\sqrt{\mathcal{E}'^2_0 + (ceE't')^2} - \mathcal{E}'_0 \right) = \frac{\Delta \mathcal{E}}{eE} \Rightarrow  t' = \sqrt{\left(\frac{\Delta \mathcal{E}}{\gamma} \right)^2 - 2 \frac{\Delta \mathcal{E}}{\gamma} \mathcal{E}'_0} \Rightarrow
 \end{equation*}
+
+\begin{equation*}
+\boxed{ t = \gamma \left(t' - \frac{\beta}{c}x'(t) \right) }
+\end{equation*} 
 con
 \begin{equation*}
 x'(t) = \frac{p'_x(0) c}{eE'} \arcsinh \left(\frac{eE'ct'}{\mathcal{E}'_0} \right) 
@@ -1491,34 +1470,34 @@ $q, m, L, p_0, R$ \ e \ $\mathcal{E}_0 = \sqrt{m^2_q + p^2_{0,z}}$
 
 Applicando il boost si ottengono:
 
-\begin{equation**}
+\begin{equation*}
     p'_{0,z} = p_{0,z} = \beta \ \mathcal{E}_0;
-\end{equation**}
+\end{equation*}
 
-\begin{equation**}
+\begin{equation*}
     p'_{0,x} = \gamma  \ (p_{0,x} - \beta \ \mathcal{E}_0) = \gamma  \beta \ \mathcal{E}_0;
-\end{equation**}
+\end{equation*}
 
-\begin{equation**}
+\begin{equation*}
     \mathcal{E}'_0 = \gamma \ (\mathcal{E}_0 - \beta \ p_{0,x}) = \gamma \ \mathcal{E}_0.
-\end{equation**}
+\end{equation*}
 
 Considerando il moto in S' si ricavano R e L: 
 (nello specifico $L = \beta'_z \ T$ con $T$ periodo in cui la particella effettua una circonferenza e $\beta'_z = \frac{p'_{0,z}}{\mathcal{E}'_0} = \frac{p_{0,z}}{\mathcal{E}'_0}$)
-\begin{equation**}
+\begin{equation*}
     T =  \frac{2\pi}{\omega_c} = \frac{2\pi m \gamma^2 c}{qB} =  \frac{2\pi  \gamma \ \mathcal{E}'_0}{qB} = \frac{2\pi  \gamma^2 \ \mathcal{E}_0}{qB};
-\end{equation**}
-\begin{equation**}
+\end{equation*}
+\begin{equation*}
 \begin{cases}
 R = \frac{v'_\bot}{\omega_c} = \frac{v'_\bot \ m \gamma c}{q B'} = \frac{p'_{0,z} \ \gamma^2}{qB} = \frac{\gamma^2 \beta \ \mathcal{E}_0}{qB}  \  \Rightarrow  \  \gamma \beta = \frac{R \ 2\pi \gamma \ p_{0,z}}{\mathcal{E}_0 \ L}\\
 \\
 L = \beta'_z \ T = \frac{p_{0,z}}{\gamma \ \mathcal{E}_0} \ \frac{2\pi  \gamma^2 \ \mathcal{E}_0}{qB}  = \frac{2\pi \gamma \ p_{0,z}}{ qB}  \  \Rightarrow  \  B = \frac{2\pi \gamma \ p_{0,z}}{q L}
 \end{cases}
-\end{equation**}
+\end{equation*}
 Risolvendo rispetto a $\gamma$ si ottengono $\gamma = \sqrt{\left(\frac{R \ 2\pi \ p_{0,z}}{\mathcal{E}_0 \ L}\right)^2 + 1}$ \  e  \ $\beta = \sqrt{1 - \frac{1}{\gamma^2}} = \frac{\sqrt{\gamma^2-1}}{\gamma}$.
-\begin{equation**}
+\begin{equation*}
     B = \frac{2\pi \ p_{0,z}}{q L} \ \sqrt{\left(\frac{R \ 2\pi \ p_{0,z}}{\mathcal{E}_0 \ L}\right)^2 + 1}  \  \Rightarrow  \  E = \beta B = \ \frac{2\pi \ p_{0,z}}{q L} \ \frac{R \ 2\pi \ p_{0,z}}{\mathcal{E}_0 \ L} = \frac{4\pi^2 R \ p^2_{0,z}}{q \ \mathcal{E}_0 \ L^2}
-\end{equation**}
+\end{equation*}
 
 \end{solution}
 
@@ -1683,7 +1662,7 @@ Quindi \begin{equation*}
 	    \begin{minipage}[]{.49\textwidth}
 	       \begin{figure}[H]
 	        	\flushright
-    		    \hspace{-1cm}\includegraphics[height=0.60   \linewidth]{Grafici/condensatore.pdf}
+    		    \hspace{-1cm}\includegraphics[height=0.60   \linewidth]{condensatore.pdf}
 		        
         \end{figure}
 
@@ -1692,13 +1671,12 @@ Quindi \begin{equation*}
 		\begin{minipage}[]{.49\textwidth}
 			\begin{figure}[H]
 	        	\flushright
-    		    \hspace{-1cm}\includegraphics[height=0.70   \linewidth]{Grafici/ss.pdf} 
+    		    \hspace{-1cm}\includegraphics[height=0.70   \linewidth]{ss.pdf} 
     		    
         \end{figure}
 		  \end{minipage}
     \end{flushright}
 	\end{figure}
- 
  
 
 Tutti questi passaggi servono per capire se il fascio di pioni $\pi^-$ escono dallo stesso lato del condensatore o se lo attraversano. In quest'ultimo caso bisognerebbe considerare che l'energia del fascio non è la stessa ma varia rispetto considerando anche la componente del campo elettrico $E$: $\Delta \mathcal{E} = eE \ \Delta y$. 
@@ -2004,6 +1982,7 @@ La vita media delle particelle si intende nel loro sistema di riferimento. Dunqu
 $$ \tau = \int_{0}^{\overline{t}} dt \frac{1}{\gamma} = \frac{\overline{t}}{\gamma} = \frac{d}{c \beta \gamma} = 3.5 \cdot 10^{-19} \mbox{ s}$$
 Dal primo punto ricordiamo che sussiste la catena di disuguaglianze $\beta > \beta_\star \gamma_\star > \beta_\star$, da cui si deduce che esiste che non sono permessi tutti gli angoli per il momento dei $K$, che devono stare su un ellisse nel piano $(p_x, p_y)$
 Dunque, considerando le seguenti figure è facile capire quali sono i casi in cui abbiamo modulo del momento minore e massimo
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.5]{1_es.png}
@@ -2015,6 +1994,7 @@ Dunque, considerando le seguenti figure è facile capire quali sono i casi in cu
 \includegraphics[scale=0.5]{2_es.png}
 \end{figure}
 \vspace{1em}
+
 
 I casi sono quelli in cui il momento è tutto sull'asse $x$, che corrisponde ai casi di $\theta_\star = 0, \pi$, dunque con una trasformazione di Lorentz
 $$ p_{MAX} = \gamma(p^\star + \beta \E^\star) = \gamma \tonde{\sqrt{\frac{M^2}{4}-m^2} + \beta \frac{M}{2}} = 1.034 \mbox{ GeV/c}$$
@@ -2506,7 +2486,6 @@ f_{>45^o} = n t \pi \ \left( \frac{Z e^2}{4\pi \epsilon_0}\right) \ \frac{1}{(\m
 \begin{solution}
 Il numero di particelle per superficie che vengono deflesse è: \begin{equation*}
 n = \frac{\rho}{\mathrm{MM}} \ N_A = \frac{10.5 }{10^{-6 } \ 108} \ 6.022 \cdot 10^{23} = 5.85 \cdot 10^{28} \ \mathrm{particelle/m}^2  
-
 \end{equation*}
 Dunque il numero di particelle che vengono deflesse ad un angolo maggiore di $90^o$ è pari a: \begin{gather*}
 f_{> 90^o} = n t \pi \ \left( \frac{Z e^2}{4\pi \epsilon_0}\right) \ \frac{1}{(\mathcal{E}_K)^2} \ \cot^2{\left(\frac{\pi}{8}\right)} 
@@ -2733,43 +2712,47 @@ Quindi si verifica il principio di indeterminazione di Heisenberg:
 
 
 \begin{solution}
-\begin{equation**}
+\begin{equation*}
    V(x) = \begin{cases}
     V_0  & -\frac{L}{2} < x < + \frac{L}{2} \\
     + \infty  & x < - \frac{L}{2} \ \lor \ x > + \frac{L}{2}
     \end{cases}
-\end{equation**}
+\end{equation*}
 
 \begin{enumerate}[label=(\textit{\roman*})]
 \item
 $V_0 = 0$
 
 Le soluzioni stazionarie delle autofunzioni sono: $\varphi(x) = A \ e^{ikx} + B \ e^{-ikx}$ . Per stimare i valori dei due coefficienti è necessario considerare le condizioni al contorno per cui $\varphi(-\frac{L}{2}) = 0 = \varphi(\frac{L}{2})$ : 
-\begin{equation**}
+\begin{equation*}
 \begin{cases}
-    \varphi \left(- \frac{L}{2} \right) = A \ e^{-ik\frac{L}{2}} + B \ e^{ik\frac{L}{2}} = 0  \  \Rightarrow  \  B = A \ e^{-ikL}  \\
+    \varphi \left(- \frac{L}{2} \right) 
+    &= A \ e^{-ik\frac{L}{2}} + B \ e^{ik\frac{L}{2}} = 0  \  \Rightarrow  \  B = A \ e^{-ikL}  \\
     \\
-    \varphi \left(+ \frac{L}{2} \right) = A \ e^{ik\frac{L}{2}} + B \ e^{-ik\frac{L}{2}} = A \ \left(e^{ik\frac{L}{2}} - e^{-ikL} \ e^{-ik\frac{L}{2}} \right)  =  2i \ A e^{-ik\frac{L}{2}} \ \frac{(e^{ikL} - e^{ikL})}{2i} = C \sin{(kL)} = 0
+
+    \varphi \left(+ \frac{L}{2} \right) 
+    & = A \ e^{ik\frac{L}{2}} + B \ e^{-ik\frac{L}{2}} = A \ \left(e^{ik\frac{L}{2}} - e^{-ikL} \ e^{-ik\frac{L}{2}} \right)  \\
+    & =  2i \ A e^{-ik\frac{L}{2}} \ \frac{(e^{ikL} - e^{ikL})}{2i} = C \sin{(kL)} = 0
     \end{cases}
-\end{equation**}
+\end{equation*}
 
 Quindi si ottiene che $\sin{(kL)} = 0$ se $k_n = \frac{n \pi}{L}$ con energia $\mathcal{E}_n = \frac{k_n^2 \hbar^2}{2 M} = \frac{n^2 \pi^2 \hbar^2}{ 2 M L^2}$ ;
 
 Riscrivendo le soluzioni stazionarie si ottiene che: 
-\begin{equation**}
+\begin{equation*}
 \varphi(x) = A \ \left(e^{ikx} - e^{-ikL} \ e^{-ikx} \right)   \  \text{con}  \  e^{-ikL} = \cos{(n \pi)} - i \sin{(n \pi)} = \begin{cases}
     \ 1  &  \text{n = pari} \\
     -1  &  \text{n = dispari}
 \end{cases}
-\end{equation**}
+\end{equation*}
 
 Dunque: 
-\begin{equation**}
+\begin{equation*}
 \varphi(x) = \begin{cases}
     A \ \sin{(\frac{n \pi x }{L})}  &  \text{n = pari} \\
     A \ \cos{(\frac{n \pi x }{L})}  &  \text{n = dispari}
 \end{cases}
-\end{equation**}
+\end{equation*}
 
 Normalizzando: \begin{equation*}
  1 = A^2 \int_{-\frac{L}{2}}^{\frac{L}{2}} {\sin^2{\left( \frac{n \pi x}{L} \right)}} \ dx =  A^2 \int_{-\frac{L}{2}}^{\frac{L}{2}} { \frac{1- \cos{\left( \frac{ 2 n \pi x}{L} \right)}}{2}} \ dx = A^2 \ \frac{x}{2} \Big|_{-\frac{L}{2}}^{\frac{L}{2}} \ \  \Rightarrow \ \  A = \sqrt{\frac{2}{L}}  
@@ -2899,7 +2882,7 @@ Con la buca di potenziale di estremi $\left[- \frac{L}{2} ; \frac{L}{2}\right]$ 
  \end{solution}
  
  
- \begin{solution}
+\begin{solution}
 Per la buca di potenziale di larghezza $L$ si hanno le seguenti relazioni tra $L$ e l'energia: 
 \begin{equation*}
  k_n = \frac{\sqrt{2 M \ \mathcal{E}}}{\hbar} \ ;  \  k_n =  \frac{n \pi}{L}   \  \Rightarrow  \  L = \frac{n \pi}{\sqrt{2 M \mathcal{E}_0}}  
@@ -2911,8 +2894,5 @@ Per la buca di potenziale di larghezza $L$ si hanno le seguenti relazioni tra $L
  \end{equation*}
  
  Quindi: $L = 55.5 \cdot 10^{-12}$ m
- \end{solution}
-
-
-
+\end{solution}
 \end{document}
