@@ -154,7 +154,7 @@ dove $| \vec p | = 500 \frac{MeV}{c}$ , $m_\pi=140 \frac{MeV}{c^2}$, $m_\nu=106 
 \end{esercizio}
 
 \begin{esercizio}
-	-Un fascio di protoni incide su di un bersaglio e produce un fascio di $\pi^-$ ad energia fissata. Dopo una distanza l = 10m di volo , il 10\% dei $\pi^-$ è decaduto. Si calcoli:
+	-Un fascio di protoni incide su di un bersaglio e produce un fascio di $\pi^-$ ad energia fissata. Dopo una distanza l = 10m di volo, il 10\% dei $\pi^-$ è decaduto. Si calcoli:
 	\begin{enumerate}[label=(\textit{\roman*})]
 		\item L' energia dei $\pi^-$ nel laboratorio.
 	\end{enumerate}
@@ -165,6 +165,9 @@ dove $| \vec p | = 500 \frac{MeV}{c}$ , $m_\pi=140 \frac{MeV}{c^2}$, $m_\nu=106 
 \begin{enumerate}[label=(\textit{\roman*})]
 	\item[(\textit{ii})] Si dica se i $\mu^-$ possono essere prodotti ad angolo $\theta > \frac{\pi}{2}$ rispetto alla direzione di volo del $\pi^-$ nel laboratorio e motivare la risposta.
 \end{enumerate}
+\begin{equation*} 
+	\Bigg[ m_{\pi^-}= 149.6 \frac{MeV}{c^2}; \ \tau_{0} = 2.60 \cdot 10^{-8} \ \mathrm{s}; \ m_{\mu^-} = 105.7 \frac{MeV}{c^2} \Bigg]
+\end{equation*}
 \end{esercizio}
 
 \begin{esercizio}
@@ -174,7 +177,7 @@ dove $| \vec p | = 500 \frac{MeV}{c}$ , $m_\pi=140 \frac{MeV}{c^2}$, $m_\nu=106 
 	\end{equation*}
 	Si calcoli l'energi minima che deve avere $\gamma$ nel laboratorio, in cui $T$ è in quiete per dare luogo alla reazione.
 	\begin{equation*} 
-		\Bigg[ m_{\pi^-}= 140 \frac{MeV}{c^2}; \ m_p= 938,3 \frac{MeV}{c^2}; \ m_n = 939,6 \frac{MeV}{c^2}; \ m_T=2809 \frac{MeV}{c^2} \Bigg]
+		\Bigg[ m_{\pi^-}= 149.6 \frac{MeV}{c^2}; \ m_p= 938.3 \frac{MeV}{c^2}; \ m_n = 939.6 \frac{MeV}{c^2}; \ m_T=2809 \frac{MeV}{c^2} \Bigg]
 	\end{equation*}
 \end{esercizio}
 
@@ -1215,21 +1218,22 @@ Quindi $V = 5.7 \cdot 10^9 \mathrm{V}$.
 	\begin{enumerate}[label=(\textit{\roman*})]
 		\item Considerando la soluzione della legge dei decadimenti in cui $N(t)$ è uguale al numero di particelle che ancora non sono decadute, si ottiene una relazione in cui il tempo è in funzione della velocità:
 		\begin{align*}
-	    N(t) &= N_0 \ e^{-\frac{t}{\tau}} = N_0 \ e^{-\frac{t}{\gamma \tau_0}} \\
-	    \Rightarrow  \  t &= -\ln{\left( \frac{9}{10}\right)} \gamma \tau_0 \qquad \text{con} \; t = \frac{l}{\beta c} \\
-	    \Rightarrow  \  \frac{l}{\beta c } &= \ln{\frac{10}{9}} \frac{1}{\sqrt{1-\beta^2}} \tau_0 
+	    & N(t) = N_0 \ e^{-\frac{t}{\tau}} = N_0 \ e^{-\frac{t}{\gamma \tau_0}} \\
+	    & t = -\ln{\left( \frac{9}{10}\right)} \gamma \tau_0 \qquad \text{con} \; t = \frac{l}{\beta c} \\
+	    & \frac{l}{\beta c } = \ln\left({\frac{10}{9}}\right) \frac{1}{\sqrt{1-\beta^2}} \tau_0  \\
+	    & \frac{\beta}{\sqrt{1-\beta^2}} = \frac{l}{c \tau_{0} \ln \left(\frac{10}{9}\right) = 12.168} 
 	   	\end{align*}
-	 quindi $\beta^2 = 0.993$ e di conseguenza $\gamma = 12.2$. \\
-  N.B. nella legge dei decadimenti quando viene riportato $\tau_0$ esso è misurato nel s.d.R. delle particelle, che quindi deve essere moltiplicato per il fattore $\gamma$ per spostarsi nel s.d.R. del laboratorio.
-	
+	quindi $\beta_{CM} = \beta_{\pi^-} = 0.997$ e di conseguenza $\gamma = 12.21$.
+		 
+	\noindent \textbf{N.B.} nella legge dei decadimenti quando viene riportato $\tau_0$ esso è misurato nel s.d.R. delle particelle, che quindi deve essere moltiplicato per il fattore $\gamma$ per spostarsi nel s.d.R. del laboratorio.
+		
 	Applicando la definizione di energia si ottiene $E = m_\pi c^2 \gamma = 1.709 \ \mathrm{GeV}$.
 	
-	\item La condizione per cui si ha un angolo $\theta > \frac{\pi}{2}$ si ottiene nel caso in cui $\beta_{CM} < \beta^\ast_\alpha$. Infatti basta riprendere il concetto secondo cui l'ellisse è il luogo dei punti su cui varia il modulo di $\overline{p}_\alpha$ e l'angolo di diffusione, e ricordarsi il caso in cui l'origine (0;0) è un punto interno all'ellisse. Si calcolano dunque $\beta_{CM} = \beta_\pi$ e $\beta^\ast_\alpha = \beta^\ast_\mu$:
+	\item La condizione per cui si ha un angolo $\theta > \frac{\pi}{2}$ si ottiene nel caso in cui $\beta_{CM} < \beta^\ast_\alpha$. Infatti basta riprendere il concetto secondo cui l'ellisse è il luogo dei punti su cui varia il modulo di $\overline{p}_\alpha$ e l'angolo di diffusione, e ricordarsi il caso in cui l'origine $(0;\ 0)$ è un punto interno all'ellisse. Si calcola dunque $\beta^\ast_\alpha = \beta^\ast_\mu$:
 	
 	\begin{align*}
-	    \beta_\pi &= \frac{\overline{p}_\pi}{E_\pi} = \frac{\sqrt{E^2_\pi - m^2_\pi}}{E_\pi} = 0.997 \\
-	    \beta^\ast_\mu &= \frac{\overline{p^\ast}_\mu}{E^\ast_\mu} = 0.27 \\
-	    \text{considerando che}  \  E^\ast_\mu &= \frac{m^2_\pi + m^2_\mu}{2 m_\pi} = 110 \ \mathrm{MeV}
+		E^\ast_\mu &= \frac{m^2_\pi + m^2_\mu}{2 m_\pi} = 110 \ \mathrm{MeV} \\
+	    \beta^\ast_\mu &= \frac{\overline{p^\ast}_\mu}{E^\ast_\mu} = \frac{\sqrt{(E^\ast_\mu)^2 - (m_\mu)^2}}{E^\ast_\mu} = 0.277
 	\end{align*}	
 	In conclusione avendo $\beta_\pi > \beta^\ast_\mu$ non si ha la condizione per cui l'angolo di diffusione $\theta > \frac{\pi}{2}$.
 \end{enumerate}
