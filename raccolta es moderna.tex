@@ -90,7 +90,7 @@
 	-In un sistema di riferimento inerziale vengono registrati due eventi di coordinate
 	\begin{gather*} 
 		ct_1=0 , x_1=0, y_1=0, z_1=0 \\
-		ct_2=0 , x_2=0, y_2=0, z_2=0 
+		ct_2=1 , x_2=2, y_2=0, z_2=0 
 	\end{gather*}
 	Determinare un sistema di riferimento S′ in cui i due eventi siano simultanei.
 \end{esercizio}
@@ -1015,8 +1015,8 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
 \begin{gather} 
     v'_A = \frac{v_A - v_C}{1-\frac{v_A}{c^2} v_C} = \frac{v_C - v_B}{1-\frac{v_B}{c^2} v_C} = - v'_B \\
     \Rightarrow  35 \ v^2_C - 74 \ v_C +35 = 0  \\  \Rightarrow   v_C = \begin{cases} 
-    \frac{7}{5} \ c  \ \ \ [\text{N.A. perché > 1}]\\
-    \frac{5}{7} \ c \\
+    \frac{7}{5} \ c  \qquad [\text{N.A. perché > 1}] \\[1em]
+    \frac{5}{7} \ c
     \end{cases} 
 \end{gather}
  
@@ -1050,11 +1050,19 @@ y' = y'_1 + u'_y(t'_c-t'_1) = \frac{u v}{2 c^2} \ ; \\
  \end{solution}
 
  \begin{solution}
+ 	\begin{figure}[H]
+ 		\centering
+		\includegraphics[height=0.25  \linewidth]{mink.png}
+		\caption{Diagramma di Minkowsky}
+ 	\end{figure}
 	 Perché due eventi avvengano allo stesso tempo nel s.d.R. S' bisogna che essi siano collegati da un intervallo di tipo spazio $(\Delta S^2 < 0)$. In questo caso si avvera la condizione, dunque è possibile determinare la velocità $v$ di S' rispetto a S. Applicando le trasformazioni si ottiene: 
  \begin{equation*}
-    t'_1 = \gamma \left(t_1 - \frac{v}{c^2} x_1 \right) = 0  \  t'_2 = \gamma \left(t_2 - \frac{v}{c^2} x_2 \right) = \frac{\gamma}{c} (1-2\beta)     
+ 	\begin{cases}
+    t'_1 = \gamma \left(t_1 - \frac{v}{c^2} x_1 \right) = 0  \\[1em]
+    t'_2 = \gamma \left(t_2 - \frac{v}{c^2} x_2 \right) = \frac{\gamma}{c} (1-2\beta)   
+    \end{cases}  
  \end{equation*}
- Perché avvengano allo stesso istante $t'_1 = t'_2 = 0$, quindi $\beta = \frac{1}{2}$.
+ I due eventi avvengono allo stesso istante $t'_1 = t'_2 = 0$, quindi $\beta = \frac{1}{2}$.
 \end{solution}
 \begin{solution}
 	Si nota che c'è un doppio effetto Doppler: uno quando si manda il segnale verso lo specchio e l'altro quando il segnale viene riflesso e torna indietro.
