@@ -631,7 +631,7 @@ Il $\pi^+$ viene emesso in condizioni di energia massima e successivamente entra
 \begin{esercizio}
 	-Un corpo nero sferico, di raggio $R$ e temperatura costante $T$, viene osservato ad una distanza $l = 50 m$. Nel punto di osservazione l'intensità  della
 radiazione proveniente dal corpo  è $I = 0.032 \frac{W}{m^2}$ e la lunghezza d'onda in cui 
-l'emissione è massima è $\lambda_{mac}=1.50 \mu m$. Si chiede:
+l'emissione è massima è $\lambda_{mac}=1.50 \ \mu m$. Si chiede:
 \begin{enumerate}[label=(\textit{\roman*})]
 	\item la temperatura del copro nero;
 	\item il raggio del corpo nero;
@@ -693,7 +693,7 @@ spettro $(0.4 - 0.7) \mu m$ dall'apertura. Approssimare eventuali integrali con 
 \end{esercizio}
 
 \begin{esercizio}
-	-Supponiamo che la luce arrivi dal sole da una distanza $d=1,5 \cdot 10^{11} m$, con una intensità  $I_t=1,4 \cdot 10^3 \frac{W}{m^2}$. Supponiamo che la luce sia monocromatica con frequenza $\nu =5 \cdot 10^{14} Hz$. Si chiede:
+	-Supponiamo che la luce arrivi dal sole da una distanza $d=1.5 \cdot 10^{11} m$, con una intensità  $I_t=1.4 \cdot 10^3 \frac{W}{m^2}$. Supponiamo che la luce sia monocromatica con frequenza $\nu =5 \cdot 10^{14} Hz$. Si chiede:
 	\begin{enumerate}[label=(\textit{\roman*})]
 		\item Quanti fotoni per secondo cadono su di un metro quadro di terreno;
 		\item Quale  è la potenza del sole e quanti fotoni per secondo emette;
@@ -2305,17 +2305,30 @@ d. \ Essendo una cavità sferica e radiazione non collimata si considera che l'i
 
 \begin{solution}
 \begin{enumerate}[label=(\textit{\roman*})]
-	\item Per ottenere il numero di fotoni è necessario conoscere la potenza data dall'intensità che arriva sulla Terra: \begin{equation*}
-    P_t = I_t \ 1 \ \mathrm{m}^2 = 1.4 \cdot 10^3 \ \mathrm{W}  \  \Rightarrow  \  \frac{\mathrm{\#fotoni}}{\mathrm{s}} = \frac{P}{\mathcal{E}} = \frac{1.4 \cdot 10^3}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14}} = 4.23 \cdot 10^{21} 
-\end{equation*}
+	\item Indichiamo con $n_t$ il numero di fotoni che arrivano sulla terra. Ricaviamo dall'intensità sulla terra, la relativa potenza: 
+	\begin{equation*}\begin{cases}
+    P_t = I_t \cdot \Delta S & \Delta S = 1 \ \mathrm{m}^2 \\[1em]
+    P_t = \frac{\mathcal{E}}{\Delta t} = \frac{n_t h \nu}{\Delta t} & \Delta t = 1 \ \mathrm{s} 
+	\end{cases}\end{equation*} 
+	\begin{equation*}
+	\frac{n_t}{\mathrm{s}} = \frac{P_t}{h\nu} = \frac{I_t \cdot \Delta S}{h \nu} = \frac{1.4 \cdot 10^3}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14}} = 4.23 \cdot 10^{21}  
+	\end{equation*}
+	
+	\item La potenza del Sole si ottiene come: 
+	\begin{equation*}
+    P_s = I_t \ 4\pi d^2 = 3.96 \cdot 10^{26} \ \mathrm{W}  
+	\end{equation*}
+	Inoltre indicando $n_s$ il numero di fotoni emessi dal Sole, riutilizzando il precedente sistema con $\Delta S = 4 \pi d^2$:
+	\begin{equation*}
+	\frac{n_s}{\mathrm{s}} = \frac{I_t \cdot \Delta S}{\mathcal{E}} = \frac{P_s}{h\nu}=\frac{3.96 \cdot 10^{26}}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14}} = 1.2 \cdot 10^{45} 
+	\end{equation*}
 
-\item La potenza del Sole si ottiene come: \begin{equation*}
-    P_s = I_t \ 4\pi d^2 = 3.96 \cdot 10^{26} \ \mathrm{W}  \  \Rightarrow  \  \frac{\mathrm{\#fotoni}}{\mathrm{s}} = \frac{P}{\mathcal{E}} = \frac{3.96 \cdot 10^{26}}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14}} = 1.2 \cdot 10^{45} 
-\end{equation*}
 
-\item Si considera che la radiazione è collimata per cui $I = u c $ \ . Questo porta ad avere un numero di fotoni per metro cubo pari a: \begin{equation*}
- \frac{\mathrm{\#fotoni}}{\mathrm{s}} = \frac{P}{\mathcal{E} c} = \frac{1.4 \cdot 10^{3}}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14} \ 3 \cdot 10^{8}} = 1.42 \cdot 10^{13}   
-\end{equation*}
+	\item Si considera che la radiazione è collimata per cui $I_t = u_t c $, con $u_t$ densità energetica sulla terra. Inoltre 1 m $<< \ d$, perciò consideriamo l'intensità costante all'interno del volume di 1 m$^3$. Questo porta ad avere un numero di fotoni per metro cubo pari a: 
+	\begin{gather*}
+	I_t = u_t c = \frac{\mathcal{E}}{\mathrm{m}^3} c = \frac{n_t h \nu}{\mathrm{m}^3} c \Rightarrow \\
+ 	\frac{n_t}{\mathrm{m}^3} = \frac{I_t}{h\nu c} = \frac{1.4 \cdot 10^{3}}{6.626 \cdot 10^{-34} \ 5 \cdot 10^{14} \ 3 \cdot 10^{8}} = 1.42 \cdot 10^{13}   
+	\end{gather*}
 \end{enumerate}
 \end{solution}
 
