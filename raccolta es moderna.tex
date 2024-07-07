@@ -2669,7 +2669,7 @@ Inoltre si ha che: \begin{equation*}
 \subsection{Equazioni di Schrodinger 1D}
 \begin{solution}
 \begin{equation*}
-\Psi(x,t) = C e^{-i \frac{\omega}{2} t} \ e^{-\frac{M \omega }{2 \ \hbar} x^2}   \  C, \omega \in \mathbb{R}  
+\Psi(x,t) = C e^{-i \frac{\omega}{2} t} \ e^{-\frac{M \omega }{2\hbar} x^2} \qquad  C,\omega \in \mathbb{R}  
 \end{equation*}
 
 \begin{enumerate}[label=(\textit{\roman*})]
@@ -2681,16 +2681,51 @@ Inoltre si ha che: \begin{equation*}
 \end{equation*}
 
 Dove si è considerato l'integrale notevole: \begin{equation*}
-    I_n(a) = \int_{0}^{\infty} {x^n e^{-ax^2}} dx  \Rightarrow  I_0(a) = \frac{1}{2} \sqrt{\frac{\pi}{a}} 
+    I_n(a) = \int_{0}^{\infty} {x^n e^{-ax^2}} dx  \Rightarrow  I_0(a) = \frac{1}{2} \sqrt{\frac{\pi}{a}} \qquad a=\frac{M\omega}{\hbar}
 \end{equation*}
 
-\item In questo caso ci si chiede il potenziale $V(x)$ per soddisfare l'equazione di Schroedinger in modo che esso sia indipendente dal tempo. L'equazione di Schroedinger è dunque: 
-\begin{equation*}
-    i \hbar \ \frac{\partial \Psi(x,t)}{\partial t} = -\frac{\hbar^2}{2M} \ \frac{\partial^2 \Psi(x,t)}{\partial x^2} + V(x) \ \Psi(x,t)  
-\end{equation*}
-Risolvendola considerando le singole componenti come: \begin{equation*}
-    i \hbar \ \frac{\partial \Psi(x,t)}{\partial t} = \frac{\hbar \omega}{2} \ \Psi(x,t)  -\frac{\hbar^2}{2M} \ \frac{\partial^2 \Psi(x,t)}{\partial x^2} = \Psi(x,t) \ \frac{\hbar \omega}{2} \left(1 - \frac{M \omega}{\hbar}x^2 \right) 
-\end{equation*}
+\textbf{N.B.} l'integrale notevole va da 0 a $+\infty$ ed essendo $n$ pari, da $-\infty$ a $+\infty$ è il doppio.
+
+\item In questo caso ci si chiede il potenziale $V(x)$ per soddisfare l'equazione di Schrodinger in modo che esso sia indipendente dal tempo. L'equazione di Schrodinger è dunque:
+
+\begin{gather*}
+	\hat{H}\Psi(x,t) =  \hat{E}\Psi(x,t) \\
+	-\frac{\hbar^2}{2M} \ \frac{\partial^2 \Psi(x,t)}{\partial x^2} + V(x) \ \Psi(x,t)  =  i \hbar \ \frac{\partial \Psi(x,t)}{\partial t} \\
+\end{gather*} 
+
+\begin{equation}
+	\label{eq:sol11.1pot}
+	V(x) = \frac{\hbar^2}{2M} \ \frac{\partial^2 \Psi(x,t)}{\partial x^2} \ \frac{1}{\Psi(x,t)} +  i \hbar \ \frac{\partial \Psi(x,t)}{\partial t} \ \frac{1}{\Psi(x,t)}
+\end{equation}
+
+
+Partiamo calcolando le derivate parziali della funzione di Schrodinger:
+\begin{align}
+\frac{\partial \Psi(x,t)}{\partial x} 
+&= C e^{-i \frac{\omega}{2} t} \ e^{-\frac{M \omega }{2\hbar} x^2} \left(-\frac{M\omega}{\cancel{2}\hbar}\right) \cdot \cancel{2}x = -\frac{CM\omega}{\hbar} e^{-i \frac{\omega}{2} t} \left(e^{-\frac{M \omega }{2\hbar} x^2} x \right) 
+\label{eq:sol11.1derx} 
+\\[0.5em]
+\frac{\partial^2 \Psi(x,t)}{\partial x^2} 
+& = -\frac{CM\omega}{\hbar} e^{-i \frac{\omega}{2} t} \left[e^{-\frac{M \omega }{2\hbar} x^2} \cdot \left( -\frac{M\omega}{\cancel{2}\hbar} \right) \cdot \cancel{2}x + e^{-\frac{M \omega }{2\hbar} x^2} \right] = 
+\nonumber
+\\
+&= -\frac{CM\omega}{\hbar} e^{-i \frac{\omega}{2} t} e^{-\frac{M \omega }{2\hbar} x^2} \left( -\frac{M\omega}{\hbar}x^2 + 1 \right) = 
+\nonumber
+\\
+&=-\frac{M\omega}{\hbar} \left( -\frac{M\omega}{\hbar} x^2 + 1 \right) \Psi(x,t)
+\label{eq:sol11.1derx2}
+\\[0.5em]
+\frac{\partial \Psi(x,t)}{\partial t} 
+&= C e^{-i \frac{\omega}{2} t} \ e^{-\frac{M \omega }{2\hbar} x^2} \cdot \left( -\frac{i\omega}{2} \right) = \left( -\frac{i\omega}{2} \right) \cdot \Psi(x,t) \label{eq:sol11.1dert}
+\end{align}
+
+Sostituiamo i risultati ottenuti dalle derivate nell'equazione \ref{eq:sol11.1pot} e otteniamo:
+\begin{align*}
+	V(x) 
+	&= \frac{\hbar^{\cancel{2}}}{2\cancel{M}} \ \left[ -\frac{\cancel{M}\omega}{\cancel{\hbar}} \left( -\frac{M\omega}{\hbar} x^2 + 1 \right)  \ \cancel{\frac{\Psi(x,t)}{\Psi(x,t)}} \right] +  i \hbar \ \left( -\frac{i\omega}{2} \right) \cdot \cancel{\frac{\Psi(x,t)}{\Psi(x,t)}} = 
+	\\[0.5em]
+	&= -\frac{\hbar\omega}{2} \ \left( -\frac{M\omega}{\hbar} x^2 + 1 \right) + \frac{\hbar\omega}{2} = \frac{M\omega^2 x^2}{2} - \cancel{\frac{\hbar\omega}{2}} + \cancel{\frac{\hbar\omega}{2}}
+\end{align*}
 
 Quindi: \begin{equation*}
     V(x) = \frac{M \omega^2 x^2}{2} 
@@ -2701,29 +2736,66 @@ Quindi: \begin{equation*}
     < x >  = \int_{-\infty}^{+\infty} {\varphi(x)^\ast \ x \ \varphi(x)} \ dx = \int_{-\infty}^{+\infty} {C^2 \ e^{-\frac{M \omega}{\hbar}x^2} x } \ dx = 0        
 \end{equation*}
 
-N.B. per svolgere l'integrale basta considerare che si tratta di una funzione dispari calcolata in un intervallo simmetrico da $-\infty$ a $+\infty$.
+\textbf{N.B.} per svolgere l'integrale basta considerare che si tratta di una funzione dispari calcolata in un intervallo simmetrico da $-\infty$ a $+\infty$.
 
 
-Con $\hat{p} = \frac{\hbar}{i} \ \frac{\partial \Psi}{\partial x}$ 
+Con $\varphi(x)=Ce^{-\frac{M\omega}{2\hbar}x^2}$ e $\hat{p} = \frac{\hbar}{i} \ \frac{\partial}{\partial x}$ abbiamo \begin{align*}
+    < p > 
+    &= \int_{-\infty}^{+\infty} {\varphi(x) \ \hat{p} \ \varphi^\ast(x)} \ dx 
+    = \int_{-\infty}^{+\infty} {\varphi(x) \ \frac{\cancel{\hbar}}{i} \cdot \left(-\frac{M \omega}{\cancel{2}\cancel{\hbar}} \cancel{2}x\right)} \ \varphi^\ast(x) \ dx
+    \\[0.5em]
+    &= -\frac{M\omega}{i}\int_{-\infty}^{+\infty} {C^2 \ e^{-\frac{M \omega}{\hbar}x^2} x } \ dx = 0
+\end{align*}
 
+\textbf{N.B.} anche in questo caso la funzione è dispari. 
+
+Poniamo $a=\frac{M\omega}{\hbar}$:
 \begin{equation*}
-    < p > = \int_{-\infty}^{+\infty} {\varphi(x)^\ast \ \hat{p} \ \varphi(x)} \ dx = \int_{-\infty}^{+\infty} {C^2 \ e^{-\frac{M \omega}{\hbar} x^2} \ \frac{\hbar}{i} \ \varphi(x) \ \left(-\frac{M \omega}{\hbar} x\right)} \ dx = 0       
+    < x^2 > 
+    = \int_{-\infty}^{+\infty} {\varphi(x)^\ast \ x^2 \ \varphi(x)} \ dx
+     = \int_{-\infty}^{+\infty} C^2 e^{-\frac{a}{2}x^2} \ x^2 \ e^{-\frac{a}{2}x^2} dx 
+     = C^2 \int_{-\infty}^{+\infty} e^{-ax^2} \ x^2 dx 
+\end{equation*}    
+    
+Utilizziamo l'integrale notevole $I_2(a)=\int_{0}^{+\infty} x^2 e^{-ax^2} dx = \frac{1}{4} \sqrt{\frac{\pi}{a^3}}$, che da $-\infty$ a $+\infty$ è il doppio perché n = 2 è pari.
+
+\begin{equation*} 
+	  < x^2 > = 2 \cdot \frac{1}{4} \sqrt{\frac{\pi}{a^3}} C^2 = \frac{1}{2} \sqrt{\frac{\pi\hbar^3}{M^3 \omega^3}} \cdot \sqrt{\frac{M\omega}{\pi\hbar}} = \frac{\hbar}{2 M \omega} 
 \end{equation*}
 
-N.B. anche in questo caso la funzione è dispari. 
-
+Passiamo a $<p^2>$, dove $\hat{p}^2 = -\hbar^2 \ \frac{\partial^2}{\partial x^2}$
 \begin{equation*}
-    < x^2 > = \int_{-\infty}^{+\infty} {\varphi(x)^\ast \ x^2 \ \varphi(x)} \ dx = \frac{\hbar}{2 M \omega} 
+    < p^2 > = \int_{-\infty}^{+\infty} {\varphi^\ast(x) \ \hat{p}^2 \ \varphi(x)} \ dx  
 \end{equation*}
 
+Teniamo $a=\frac{M\omega}{\hbar}$ e studiamo prima singolarmente per comodità $\hat{p}^2 \varphi(x) = -\hbar^2 \frac{\partial^2 \varphi}{\partial x^2}$ e riutilizziamo il risultato dell'equazione \ref{eq:sol11.1derx2} con $\varphi$\footnote{Il motivo è banale: la derivata spaziale non influisce sulla componente temporale dell'equazione d'onda.}:
+
 \begin{equation*}
-    < p^2 > = \int_{-\infty}^{+\infty} {\varphi(x)^\ast \ \hat{p}^2 \ \varphi(x)} \ dx = \frac{\hbar M \omega}{2}  
+	\hat{p}^2 \varphi(x) = -\hbar^2 \frac{\partial^2 \varphi}{\partial x^2} = a\hbar^2 \left( -a x^2 + 1 \right) \varphi(x)
 \end{equation*}
+	
+\begin{align*}
+	< p^2 >
+	 &= C^2 \int_{-\infty}^{+\infty} e^{-\frac{a}{2}x^2} \ \hat{p}^2 \ e^{-\frac{a}{2}x^2} \ dx
+	 = C^2 \int_{-\infty}^{+\infty} a\hbar^2 \left( -a x^2 + 1 \right) e^{ax^2} \ dx = \\
+	 &= a\hbar^2C^2 \left[ -a \int_{-\infty}^{+\infty} x^2 e^{-ax^2} + \int_{-\infty}^{+\infty} e^{-ax^2} \ dx \right]
+\end{align*}
+
+Utilizziamo nuovamente gli integrali notevoli $2I_2(a)=\frac{1}{2} \sqrt{\frac{\pi}{a^3}}$ e $2I_0(a)=\sqrt{\frac{\pi}{a}}$ epoi sostituiamo $a$ e $C$ ottenendo:
+	
+\begin{equation*}
+	< p^2 > 
+	= a\hbar^2C^2  \left[ -\cancel{a} \ \frac{1}{2} \sqrt{\frac{\pi}{a^{\cancel{3}}}} + \sqrt{\frac{\pi}{a}} \right] 
+	= \frac{M\omega}{\hbar} \hbar^2 \cancel{\sqrt{\frac{M\omega}{\hbar\pi}}} \cdot \frac{1}{2} \cancel{\sqrt{\frac{\pi\hbar}{M\omega}}}
+	= \frac{\hbar M \omega}{2} 
+\end{equation*}
+
 
 \item Per calcolare le incertezze si procede come: 
-\begin{equation*}
-    \Delta x = \sqrt{< x^2 > -  \ (< x >)^2} = \sqrt{\frac{\hbar}{2 M \omega}}   \Delta p = \sqrt{< p^2 > - \ (< p >)^2 } = \sqrt{\frac{\hbar M \omega}{2}} 
-\end{equation*}
+\begin{gather*}
+    \Delta x = \sqrt{< x^2 > - \ (< x >)^2} = \sqrt{\frac{\hbar}{2 M \omega}} \\
+    \Delta p = \sqrt{< p^2 > - \ (< p >)^2 } = \sqrt{\frac{\hbar M \omega}{2}} 
+\end{gather*}
 
 Quindi si verifica il principio di indeterminazione di Heisenberg:
 \begin{equation*}
@@ -2773,8 +2845,8 @@ Riscrivendo le soluzioni stazionarie si ottiene che:
 Dunque: 
 \begin{equation*}
 \varphi(x) = \begin{cases}
-    A \ \sin{(\frac{n \pi x }{L})}  &  \text{n = pari} \\
-    A \ \cos{(\frac{n \pi x }{L})}  &  \text{n = dispari}
+    A \ \sin{\left(\frac{n \pi x }{L}\right)}  &  \text{n = pari} \\[1em]
+    A \ \cos{\left(\frac{n \pi x }{L}\right)}  &  \text{n = dispari}
 \end{cases}
 \end{equation*}
 
@@ -2784,28 +2856,36 @@ Normalizzando: \begin{equation*}
 
 Finalmente si ottengono le soluzioni stazionarie delle autofunzioni con i coefficienti normalizzati: \begin{equation*}
 \varphi(x) = \begin{cases}
-    \sqrt{\frac{2}{L}} \ \sin{(\frac{n \pi x }{L})}  \  \text{n = pari} \\
-    \sqrt{\frac{2}{L}} \ \cos{(\frac{n \pi x }{L})}  \  \text{n = dispari}
+    \sqrt{\frac{2}{L}} \ \sin{\left(\frac{n \pi x }{L}\right)}  &  \text{n = pari} \\
+    \sqrt{\frac{2}{L}} \ \cos{\left(\frac{n \pi x }{L}\right)}  &  \text{n = dispari}
 \end{cases} 
 \end{equation*}
 
 Soluzioni stazionarie dell'autostato: \begin{equation*}
     \psi(x, t) = \begin{cases}
-    \sqrt{\frac{2}{L}} \ \sin{(\frac{n \pi x }{L})} e^{-i\omega t}  \  \text{n = pari} \\
-    \sqrt{\frac{2}{L}} \ \cos{(\frac{n \pi x }{L})} e^{-i\omega t}  \  \text{n = dispari}
+    \sqrt{\frac{2}{L}} \ \sin{\left(\frac{n \pi x }{L}\right)} e^{-i\omega t}  &  \text{n = pari} \\
+    \sqrt{\frac{2}{L}} \ \cos{\left(\frac{n \pi x }{L}\right)} e^{-i\omega t}  &  \text{n = dispari}
 \end{cases} 
 \end{equation*}
 
 \item  Per calcolare i valori di aspettazione si svolgono i seguenti integrali: \begin{equation*}
-    < x >  = \int_{-\frac{L}{2}}^{+\frac{L}{2}} {\varphi(x)^\ast \ x \ \varphi(x)} \ dx = \int_{-\frac{L}{2}}^{+\frac{L}{2}} {A^2 \ x \ \sin{\left( \frac{n \pi x}{L}\right )} } \ dx = 0        
+    < x >  = \int_{-\frac{L}{2}}^{+\frac{L}{2}} {\varphi(x)^\ast \ x \ \varphi(x)} \ dx = \int_{-\frac{L}{2}}^{+\frac{L}{2}} {A^2 \ x \ \sin^2{\left( \frac{n \pi x}{L}\right )} } \ dx = 0        
 \end{equation*}
 
-N.B. funzione dispari calcolata in un intervallo simmetrico.
+\textbf{N.B.} funzione dispari calcolata in un intervallo simmetrico.
 
-
-\begin{gather} 
-    < p > = \int_{-\frac{L}{2}}^{+\frac{L}{2}} {\varphi(x)^\ast \ \hat{p} \ \varphi(x)} \ dx = A^2 \ \frac{i \hbar n \pi}{L} \ \int_{-\frac{L}{2}}^{+\frac{L}{2}} {\sin{\left( \frac{n \pi x}{L}\right )} \ \cos{\left( \frac{n \pi x}{L}\right )}} \ dx \\=A^2 \ \frac{i \hbar n \pi}{L} \ 2 \sin{\left( \frac{2 n \pi x}{L}\right )} \Big|_{-\frac{L}{2}}^{\frac{L}{2}} =  0       
-\end{gather}
+\begin{align*} 
+    < p > 
+    &= \int_{-\frac{L}{2}}^{+\frac{L}{2}} {\varphi^\ast(x) \ \hat{p} \ \varphi(x)} \ dx
+    = A^2 \int_{-\frac{L}{2}}^{+\frac{L}{2}} \sin{\left( \frac{n \pi x}{L} \right)} \frac{\hbar}{i} \ \frac{\partial}{\partial x} \sin{\left( \frac{n \pi x}{L} \right)} \ dx = 
+    \\
+    &= \frac{2\hbar}{iL} \int_{-\frac{L}{2}}^{+\frac{L}{2}} \sin{\left( \frac{n \pi x}{L} \right)} \cos{\left( \frac{n \pi x}{L} \right)} \ \frac{n \pi}{L} \ dx
+    =\frac{\cancel{2} \hbar n \pi}{i L^2} \ \int_{-\frac{L}{2}}^{+\frac{L}{2}} \cancel{\frac{1}{2}} \ \sin{\left( \frac{2 n \pi x}{L}\right) } \ dx = \\
+    &= \frac{n \pi \hbar}{i L^2} \ \left[ -\cos{\left( \frac{2 n \pi x}{L} \right)} \right]_{-\frac{L}{2}}^{+\frac{L}{2}} \ \frac{L}{2 n \pi} 
+    = -\frac{\hbar}{2 i L} \left[ \cos{ \left( \frac{2 \pi n}{L} \ \frac{L}{2} \right) } - \cos{ \left( -\frac{2 \pi n}{L} \ \frac{L}{2} \right)} \right] =
+    \\
+    & =  0       
+\end{align*}
 
 Con la sostituzione \ $\alpha = \frac{n \pi x}{L}$ \ e \ $dx = \frac{L }{n \pi} \ d\alpha$ \ : 
 \begin{equation*}
